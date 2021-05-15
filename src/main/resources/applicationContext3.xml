@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="contact" class="com.brillio.ticketfare.ContactDetail">
+
+		<property name="mobileNumber" value="7446578483" />
+		<property name="alternateMobileNumber" value="9866453272" />
+		<property name="landLineNumber" value="040233424" />
+		<property name="email" value="raghavasnicar@gmail.com" />
+		<property name="address">
+			<bean id="address" class="com.brillio.ticketfare.Address">
+				<property name="line1" value="rajiv nagar colony" />
+				<property name="line2" value="boduppal" />
+				<property name="city" value="HYderabad" />
+				<property name="pinCode" value="516002" />
+			</bean>
+		</property>
+	</bean>
+
+</beans>
